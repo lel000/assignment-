@@ -1,0 +1,31 @@
+
+cd path/to/your/directory
+git init
+echo "This is my Git time capsule." > thoughts.txt
+git add thoughts.txt
+git commit -m "First commit - Added thoughts.txt"
+echo "Adding another thought." >> thoughts.txt
+git add thoughts.txt
+git commit -m "Second commit - Updated thoughts.txt"
+
+echo "More thoughts added." >> thoughts.txt
+git add thoughts.txt
+git commit -m "Third commit - More thoughts"
+
+echo "Even more thoughts." >> thoughts.txt
+git add thoughts.txt
+git commit -m "Fourth commit - Additional thoughts"
+
+echo "Final thought for the assignment." >> thoughts.txt
+git add thoughts.txt
+git commit -m "Fifth commit - Final thoughts"
+
+git remote add origin https://github.com/lel000/git-time-capsule.git
+git remote -v
+
+git branch -M main
+git push -u origin main
+
+git log --patch  # Shows changes in detail
+git log --stat   # Shows file modifications summary
+git log --oneline  # Shows a simplified commit history
