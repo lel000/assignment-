@@ -1,0 +1,14 @@
+git config -- global user.name " < lilian ehab >"
+git config -- global user.email " < lilianehaabb@gmail.com >"
+git config --global core.editor "atom --wait"
+git config --global core.editor "'C:/Program Files/Sublime Text 2/sublime_text.exe' -n -w"
+git config --global core.editor "code --wait"
+git add <file1> <file2> ... <fileN> git add .
+git commit –m “type your commit message here”
+git log --oneline
+git log -p
+git log --stat
+git clone <path-to-repository-to-clone>
+git remote add <shortname> <url>
+git push <repo name> <branch name>
+git pull <remote>
